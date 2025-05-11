@@ -1,1 +1,73 @@
 @import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+  --color-blue-900: rgb(19, 24, 63);
+  --color-blue-600: rgb(102, 108, 163);
+  --color-pink-600: rgb(247, 71, 128);
+  --color-pink-300: rgb(255, 167, 195);
+  --color-grey: rgb(131, 134, 154);
+  --color-white: rgb(255, 255, 255);
+  --color-gradient-pink: rgb(240, 42, 166);
+  --color-gradient-orange: rgb(255, 111, 72);
+  --color-gradient-blue: rgb(72, 81, 255);
+
+  --font-*: initial;
+  --font-sans: var(--font-plus-jakarta-sans);
+
+  --font-weight-*: initial;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  --text-*: initial;
+  --text-3xl: clamp(2.5rem, 1.5rem + 4.1667vw, 3.5rem);
+  --text-2xl: clamp(2rem, 1.5rem + 2.0833vw, 2.5rem);
+  --text-xl: clamp(1.5rem, 1rem + 2.0833vw, 2rem);
+  --text-lg: clamp(1.25rem, 1rem + 1.0417vw, 1.5rem);
+  --text-rg: clamp(1rem, 0.875rem + 0.5208vw, 1.125rem);
+  --text-sm: clamp(0.875rem, 0.75rem + 0.5208vw, 1rem);
+
+  --leading-*: initial;
+  --leading-tight: 120%;
+  --leading-normal: 150%;
+
+  --spacing-*: initial;
+  --spacing-1800: 9rem;
+  --spacing-1600: 8rem;
+  --spacing-1000: 5rem;
+  --spacing-800: 4rem;
+  --spacing-700: 3.5rem;
+  --spacing-600: 3rem;
+  --spacing-550: 2.75rem;
+  --spacing-500: 2.5rem;
+  --spacing-400: 2rem;
+  --spacing-300: 1.5rem;
+  --spacing-250: 1.25rem;
+  --spacing-200: 1rem;
+  --spacing-150: 0.75rem;
+  --spacing-100: 0.5rem;
+}
+
+/* typography classes */
+.text-preset-1 {
+  @apply font-extrabold text-3xl leading-tight;
+}
+.text-preset-2 {
+  @apply font-extrabold text-2xl leading-tight;
+}
+.text-preset-3 {
+  @apply font-extrabold text-xl leading-tight;
+}
+.text-preset-4 {
+  @apply font-extrabold text-lg leading-tight;
+}
+.text-preset-5 {
+  @apply font-medium text-rg leading-normal;
+}
+.text-preset-6 {
+  @apply font-bold text-sm leading-normal;
+}
+.text-preset-7 {
+  @apply font-bold text-rg leading-normal;
+}
