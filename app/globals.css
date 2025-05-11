@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 @theme {
+  --breakpoint-*: initial;
+  --breakpoint-md: 48rem;
+  --breakpoint-xl: 80rem;
+
   --color-*: initial;
   --color-blue-900: rgb(19, 24, 63);
   --color-blue-600: rgb(102, 108, 163);
@@ -51,23 +55,23 @@
 
 /* typography classes */
 .text-preset-1 {
-  @apply font-extrabold text-3xl leading-tight;
+  @apply text-3xl leading-tight font-extrabold;
 }
 .text-preset-2 {
-  @apply font-extrabold text-2xl leading-tight;
+  @apply text-2xl leading-tight font-extrabold;
 }
 .text-preset-3 {
-  @apply font-extrabold text-xl leading-tight;
+  @apply text-xl leading-tight font-extrabold;
 }
 .text-preset-4 {
-  @apply font-extrabold text-lg leading-tight;
+  @apply text-lg leading-tight font-extrabold;
 }
 .text-preset-5 {
-  @apply font-medium text-rg leading-normal;
+  @apply text-rg leading-normal font-medium;
 }
 .text-preset-6 {
-  @apply font-bold text-sm leading-normal;
+  @apply text-sm leading-normal font-bold;
 }
 .text-preset-7 {
-  @apply font-bold text-rg leading-normal;
+  @apply text-rg leading-normal font-bold;
 }

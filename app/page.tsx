@@ -1,11 +1,23 @@
 import Image from "next/image";
+import Button from "./components/Button";
+import ButtonLink from "./components/ButtonLink";
 
 export default function Home() {
   return (
     <div>
-      Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer
-      ligula vulputate sem tristique cursus. Nam nulla quam, gravida non,
-      commodo a, sodales sit amet, nisi.
+      <Button href="#" color="black">
+        Get Started
+      </Button>
+
+      <Button href="#" color="orange">
+        Get Started
+      </Button>
+
+      <Button href="#" color="purple">
+        Get Started
+      </Button>
+
+      <ButtonLink href="#">Get Started</ButtonLink>
     </div>
   );
 }
