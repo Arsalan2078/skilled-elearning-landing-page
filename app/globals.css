@@ -17,7 +17,7 @@
   --color-gradient-blue: rgb(72, 81, 255);
 
   --font-*: initial;
-  --font-sans: var(--font-plus-jakarta-sans);
+  --font-plus-jakarta-sans: var(--font-plus-jakarta-sans);
 
   --font-weight-*: initial;
   --font-weight-medium: 500;
@@ -51,27 +51,34 @@
   --spacing-200: 1rem;
   --spacing-150: 0.75rem;
   --spacing-100: 0.5rem;
+  --spacing-0: 0rem;
 }
 
 /* typography classes */
 .text-preset-1 {
-  @apply text-3xl leading-tight font-extrabold;
+  @apply font-plus-jakarta-sans text-3xl leading-tight font-extrabold text-blue-900;
 }
+
 .text-preset-2 {
-  @apply text-2xl leading-tight font-extrabold;
+  @apply font-plus-jakarta-sans text-2xl leading-tight font-extrabold text-blue-900;
 }
+
 .text-preset-3 {
-  @apply text-xl leading-tight font-extrabold;
+  @apply font-plus-jakarta-sans text-xl leading-tight font-extrabold text-blue-900;
 }
+
 .text-preset-4 {
-  @apply text-lg leading-tight font-extrabold;
+  @apply font-plus-jakarta-sans text-lg leading-tight font-extrabold text-blue-900;
 }
+
 .text-preset-5 {
-  @apply text-rg leading-normal font-medium;
+  @apply text-rg font-plus-jakarta-sans text-grey leading-normal font-medium;
 }
+
 .text-preset-6 {
-  @apply text-sm leading-normal font-bold;
+  @apply font-plus-jakarta-sans text-grey text-sm leading-normal font-bold;
 }
+
 .text-preset-7 {
-  @apply text-rg leading-normal font-bold;
+  @apply text-rg font-plus-jakarta-sans leading-normal font-bold;
 }
