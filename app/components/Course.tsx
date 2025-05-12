@@ -1,6 +1,5 @@
 import Image from "next/image";
 import ButtonLink from "./ButtonLink";
-import { link } from "fs";
 
 interface CourseProps {
   icon: string;
