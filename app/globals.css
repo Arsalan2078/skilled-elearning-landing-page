@@ -1,10 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-  --breakpoint-*: initial;
-  --breakpoint-md: 48rem;
-  --breakpoint-xl: 80rem;
-
   --color-*: initial;
   --color-blue-900: rgb(19, 24, 63);
   --color-blue-600: rgb(102, 108, 163);
@@ -25,12 +21,12 @@
   --font-weight-extrabold: 800;
 
   --text-*: initial;
-  --text-3xl: clamp(2.5rem, 1.5rem + 4.1667vw, 3.5rem);
-  --text-2xl: clamp(2rem, 1.5rem + 2.0833vw, 2.5rem);
-  --text-xl: clamp(1.5rem, 1rem + 2.0833vw, 2rem);
-  --text-lg: clamp(1.25rem, 1rem + 1.0417vw, 1.5rem);
-  --text-rg: clamp(1rem, 0.875rem + 0.5208vw, 1.125rem);
-  --text-sm: clamp(0.875rem, 0.75rem + 0.5208vw, 1rem);
+  --text-3xl: clamp(2.5rem, 1rem + 3.125vw, 3.5rem);
+  --text-2xl: clamp(2rem, 1.25rem + 1.5625vw, 2.5rem);
+  --text-xl: clamp(1.5rem, 0.75rem + 1.5625vw, 2rem);
+  --text-lg: clamp(1.25rem, 0.875rem + 0.7813vw, 1.5rem);
+  --text-rg: clamp(1rem, 0.8125rem + 0.3906vw, 1.125rem);
+  --text-sm: clamp(0.875rem, 0.6875rem + 0.3906vw, 1rem);
 
   --leading-*: initial;
   --leading-tight: 120%;
@@ -54,31 +50,46 @@
   --spacing-0: 0rem;
 }
 
-/* typography classes */
-.text-preset-1 {
-  @apply font-plus-jakarta-sans text-3xl leading-tight font-extrabold text-blue-900;
-}
+@layer components {
+  /* typography classes */
+  .text-preset-1 {
+    @apply font-plus-jakarta-sans text-3xl leading-tight font-extrabold text-blue-900;
+  }
 
-.text-preset-2 {
-  @apply font-plus-jakarta-sans text-2xl leading-tight font-extrabold text-blue-900;
-}
+  .text-preset-2 {
+    @apply font-plus-jakarta-sans text-2xl leading-tight font-extrabold text-blue-900;
+  }
 
-.text-preset-3 {
-  @apply font-plus-jakarta-sans text-xl leading-tight font-extrabold text-blue-900;
-}
+  .text-preset-3 {
+    @apply font-plus-jakarta-sans text-xl leading-tight font-extrabold text-blue-900;
+  }
 
-.text-preset-4 {
-  @apply font-plus-jakarta-sans text-lg leading-tight font-extrabold text-blue-900;
-}
+  .text-preset-4 {
+    @apply font-plus-jakarta-sans text-lg leading-tight font-extrabold text-blue-900;
+  }
 
-.text-preset-5 {
-  @apply text-rg font-plus-jakarta-sans text-grey leading-normal font-medium;
-}
+  .text-preset-5 {
+    @apply text-rg font-plus-jakarta-sans text-grey leading-normal font-medium;
+  }
 
-.text-preset-6 {
-  @apply font-plus-jakarta-sans text-grey text-sm leading-normal font-bold;
-}
+  .text-preset-6 {
+    @apply font-plus-jakarta-sans text-grey text-sm leading-normal font-bold;
+  }
 
-.text-preset-7 {
-  @apply text-rg font-plus-jakarta-sans leading-normal font-bold;
+  .text-preset-7 {
+    @apply text-rg font-plus-jakarta-sans leading-normal font-bold;
+  }
+
+  /* gradient classes */
+  .gradient-orange {
+    @apply from-gradient-pink to-gradient-orange bg-linear-to-t;
+  }
+
+  .gradient-purple {
+    @apply from-gradient-pink to-gradient-blue bg-linear-to-t;
+  }
+
+  .gradient-white {
+    @apply bg-linear-to-b from-white to-[rgb(240,241,255)];
+  }
 }

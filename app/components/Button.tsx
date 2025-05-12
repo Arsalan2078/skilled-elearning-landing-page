@@ -17,9 +17,9 @@ export default function Button({
           color === "black"
             ? "bg-blue-900 transition-[background-color] duration-150 ease-out hover:bg-blue-600 focus:bg-blue-600"
             : color === "orange"
-              ? "from-gradient-pink to-gradient-orange bg-linear-to-t"
+              ? "gradient-orange"
               : color === "purple"
-                ? "from-gradient-pink to-gradient-blue bg-linear-to-t"
+                ? "gradient-purple"
                 : ""
         } `}
         {...props}
