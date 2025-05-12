@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Button from "./components/Button";
-import ButtonLink from "./components/ButtonLink";
 import Logo from "./components/Logo";
 import Course from "./components/Course";
 import CoursesCTA from "./components/CoursesCTA";
