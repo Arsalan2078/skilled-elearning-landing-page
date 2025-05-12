@@ -5,14 +5,14 @@ interface CourseProps {
   icon: string;
   title: string;
   description: string;
-  link: string | undefined;
+  buttonLink: string | undefined;
 }
 
 export default function Course({
   icon,
   title = "Course Title",
   description = "Course description goes here...",
-  link,
+  buttonLink,
 }: CourseProps) {
   return (
     <>
@@ -30,7 +30,7 @@ export default function Course({
           <p>{description}</p>
         </div>
 
-        <ButtonLink href={link}>Get Started</ButtonLink>
+        <ButtonLink href={buttonLink}>Get Started</ButtonLink>
       </div>
     </>
   );
